@@ -1,0 +1,162 @@
+<html lang="en"><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dr. Pramod Vishwakarma - Portfolio</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Segoe UI", sans-serif;
+    }
+
+    body {
+        background: #fff;
+        color: #000;
+        overflow-x: hidden;
+        min-height: 100vh;
+        padding-bottom: 3rem;
+    }
+
+    header {
+        text-align: center;
+        padding: 2.5rem 1rem;
+        border-bottom: 4px solid black;
+        position: relative;
+    }
+
+    h1 {
+        font-size: 3rem;
+        font-weight: 900;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+        margin-bottom: 0.5rem;
+    }
+
+    .subtitle {
+        font-size: 1.1rem;
+        font-weight: 600;
+        opacity: 0.9;
+    }
+
+    .float-icon {
+        position: absolute;
+        opacity: 0.12;
+        font-size: 4.5rem;
+        pointer-events: none;
+        animation: drift 7s infinite alternate ease-in-out;
+    }
+
+    .i1 { top: 10%; left: 6%; }
+    .i2 { bottom: -10%; right: 8%; }
+
+    @keyframes drift {
+        0% { transform: translateY(0); }
+        100% { transform: translateY(-20px); }
+    }
+
+    .portfolio-section {
+        width: 85%;
+        margin: 3rem auto;
+        display: flex;
+        justify-content: center;
+        align-items: stretch;
+        gap: 2rem;
+        flex-wrap: wrap;
+    }
+
+    .portfolio-card {
+        flex: 1 1 320px;
+        border: 3px solid black;
+        padding: 2rem;
+        border-radius: 6px;
+        text-align: center;
+        transition: 0.3s ease;
+        position: relative;
+        background: #fff;
+    }
+
+    .portfolio-card:hover {
+        transform: translateY(-6px);
+        box-shadow: 6px 6px 0px black;
+    }
+
+    .portfolio-icon {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+    }
+
+    .portfolio-card h3 {
+        font-size: 1.5rem;
+        margin-bottom: 0.6rem;
+    }
+
+    .portfolio-card p {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+        line-height: 1.5;
+    }
+
+    .visit-btn {
+        background: black;
+        color: white;
+        border: none;
+        padding: 12px 26px;
+        font-weight: bold;
+        cursor: pointer;
+        text-transform: uppercase;
+        transition: 0.2s ease;
+    }
+
+    .visit-btn:hover {
+        background: white;
+        color: black;
+        outline: 2px solid black;
+    }
+
+    footer {
+        text-align: center;
+        font-size: 0.9rem;
+        margin-top: 3rem;
+        opacity: 0.8;
+    }
+
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Dr. Pramod Vishwakarma</h1>
+    <p class="subtitle">Portfolio Showcase</p>
+    <div class="float-icon i1"><i class="fas fa-flask"></i></div>
+    <div class="float-icon i2"><i class="fas fa-atom"></i></div>
+</header>
+
+<section class="portfolio-section">
+
+    <div class="portfolio-card">
+        <div class="portfolio-icon"><i class="fas fa-industry"></i></div>
+        <h3>Portfolio: Industry</h3>
+        <p>Explore Dr. Vishwakarma’s contributions to industrial projects, consultancy, and applied research.</p>
+        <a href="industry.html"><button class="visit-btn">View</button></a>
+    </div>
+
+    <div class="portfolio-card">
+        <div class="portfolio-icon"><i class="fas fa-graduation-cap"></i></div>
+        <h3>Portfolio: Academic</h3>
+        <p>Dive into academic publications, teaching philosophy, and ongoing research endeavors.</p>
+        <a href="academic.html"><button class="visit-btn">View</button></a>
+    </div>
+
+</section>
+
+<footer>
+    © 2025 Dr. Pramod Vishwakarma | All Rights Reserved
+</footer>
+
+
+
+</body></html>
